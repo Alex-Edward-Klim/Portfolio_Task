@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+.body {
+  text-align: center;
+
+  background: rgb(0, 0, 0);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 3%;
+  align-items: center;
+  margin: 30px 10%;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+
+}
+
+.header__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 7vw;
+}
+
+.photo {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  justify-self: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.br {
+  color: white;
+}
+
+.education {
+  width: 95%;
+  margin: auto;
+}
+
+.education__button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: whitesmoke;
+  text-align: left;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+
+.education__button span {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.education__button::before {
+  content: "(OPEN) \02C5";
+  float: right;
+}
+
+.education__button.is-open::before {
+  content: "(CLOSE) \02C4";
+}
+
+.education__button:hover {
+  background: #ddd;
+}
+
+.education__content {
+  color: white;
+  border: 1px solid whitesmoke;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.education__content span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container__heading {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10%;
+  font-size: 32px;
+  text-align: start;
+}
+
+.description-show-hide {
+  display: none;
+  color: white;
+  background: rgba(255, 0, 0, 0.75);
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.5);
+}
+
+.description-show-hide:hover {
+  padding-left: 60px;
+  padding-right: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+}
+
+.container__swipe-tip {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container__text-span {
+  font-weight: normal;
+  color: rgb(255, 0, 0);
+}
+
+.container__left-span, .container__right-span {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  /*width: 1500px;*/
+  transition: transform 300ms linear;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+
+.theyalow, .repair-design-project {
+  height: 0;
+  padding-bottom: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.theyalow {
+  background: url("./assets/images/THEYALOW%20Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.repair-design-project {
+  background: url("./assets/images/RDP_Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.description-wrapper {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.75);
+  margin-top: 25px;
+  text-align: initial;
+}
+
+.description-wrapper__heading {
+  margin-bottom: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.description-wrapper__list {
+  padding: 0 30px 0 45px;
+}
+
+.content__tip {
+  display: inline-block;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+}
+
+/* General Buttons */
+.button {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+
+/* Just for presentation */  
+  display: inline-block;
+  margin: 20px;
+}
+.button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  top: 1px;
+}
+
+.button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6; 
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;  
+}
+
+/* Button pointing left */
+.button.back {
+  text-align: right;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+.button.back:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-right: 16px solid transparent;
+  border-left: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6; 
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 5px;    
+}

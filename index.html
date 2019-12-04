@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+  <header class="header">
+    <h1 class="header__heading">Alex Klim</h1>
+    <a href="https://github.com/Alex-Edward-Klim">GitHUB: https://github.com/Alex-Edward-Klim</a>
+    <a href="tel:+375293221128">Viber, WhatsApp, Skype etc.: +375293221128</a>
+    <img class="photo" src="./assets/images/Photo.png" alt="Photo" width="320px">
+  </header>
+  <hr class="br">
+  <section class="education">
+    <button class="education__button" id="education__button">Education <span>(click me)</span></button>
+    <div class="education__content" id="education__content">
+      <p><span>Russian Foreign Trade Academy</span>
+        <br>
+        (Ministry of economic development of the Russian Federation)
+        <br>
+        2004 - 2009
+      </p>
+      <p><span>Belarusian State University</span>
+        <br>
+        2012 - 2016
+      </p>
+      <p><span>MINSK STATE LINGUISTIC UNIVERSITY</span>
+        <br>
+        2012 - 2013
+      </p>
+      <p><span>RSSchool</span>
+        <br>
+        JavaScript Development Q3-2018
+        <br>
+        JavaScript Development Q1-2019
+        <br>
+        JavaScript Development Q3-2019
+      </p>
+    </div>
+  </section>
+  <hr class="br">
+  <div class="container" id="container">
+    <h2 class="container__heading">Projects:</h2>
+    <div class="description-show-hide" id="description-show-hide">Show Description</div>
+    <div class="buttons-container" id="buttons-container">
+      <button class="button back" id="btn-2">Previous</button>
+      <button class="button" id="btn-1">Next</button>
+    </div>
+    <div class="content" id="content">
+      <div class="theyalow" id="theyalow">
+        <div class="description-wrapper">
+          <h2 class="description-wrapper__heading">theyalow</h2>
+          <ul class="description-wrapper__list">
+            <li>Desktop and Mobile Versions</li>
+            <li>Simple Design</li>
+            <li>Pure CSS</li>
+          </ul>
+        </div>
+        <br>
+        <div class="content__tip">
+          <p>Tap on image to see the project ></p>
+        </div>
+      </div>
+      <div class="repair-design-project" id="repair-design-project">
+        <div class="description-wrapper">
+          <h2 class="description-wrapper__heading">repair-design-project</h2>
+          <ul class="description-wrapper__list">
+            <li>Totally Responsive</li>
+            <li>No JS</li>
+            <li>Designed with SCSS</li>
+          </ul>
+        </div>
+        <br>
+        <div class="content__tip">
+         <p>Tap on image to see the project ></p>
+        </div>
+      </div>
+    </div>
+    <p class="container__swipe-tip" id="swipe-tip"><span class="container__left-span" id="container__left-span">&lt; &lt; &lt;</span><span class="container__text-span">Swipe over images (left-right)</span><span class="container__right-span" id="container__right-span">&gt; &gt; &gt;</span></p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

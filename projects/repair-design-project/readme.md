@@ -1,0 +1,1 @@
+﻿Currently I use Live Sass Compiler (extension for VSCode) to convert SCSS to CSS file. So now there is no need for any installation to start this project.
